@@ -11,7 +11,8 @@
     "dist",
     "lib",
     "es",
-    "src"
+    "src",
+    "types"
   ],
   "repository": {
     "url": "https://github.com/lucasmrdt/react-nedux"
