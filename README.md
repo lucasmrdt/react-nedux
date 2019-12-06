@@ -1,5 +1,7 @@
 # React-Nedux - The `n`ext react-r`edux`
 
+![typescript](https://img.shields.io/badge/-typescript-blueviolet) [![version](https://img.shields.io/badge/version-beta-blue)](https://www.npmjs.com/package/nedux) [![size](https://img.shields.io/bundlephobia/minzip/react-nedux?color=green&label=size)](https://www.npmjs.com/package/nedux)
+
 > The official React bindings for [nedux](https://github.com/lucasmrdt/nedux). Performant and flexible.
 
 ## 📦 Installation
@@ -10,10 +12,10 @@ npm install nedux react-nedux --save
 
 ## 💻 Usage with examples
 
-|     Name     |                                Source                                 | Codesandbox |
-| :----------: | :-------------------------------------------------------------------: | :---------: |
-| ✅ Todo List | [here](https://github.com/lucasmrdt/nedux/tree/master/examples/todos) |   `todo`    |
-|  🎛 Counter   | [here](https://github.com/lucasmrdt/nedux/tree/master/examples/todos) |   `todo`    |
+|     Name     |                                         Source                                         |                                                    Codesandbox                                                     |
+| :----------: | :------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------: |
+| ✅ Todo List |         [here](https://github.com/lucasmrdt/nedux/tree/master/examples/todos)          |            [here](https://codesandbox.io/s/focused-lewin-nm8j0?fontsize=14&hidenavigation=1&theme=dark)            |
+|  🎛 Counter   | [here](https://github.com/lucasmrdt/nedux/tree/master/examples/counter-nedux-vs-redux) | [here](https://codesandbox.io/s/counter-nedux-vs-redux-n34b2?fontsize=14&hidenavigation=1&theme=dark&view=preview) |
 
 ## 📜 Documentation
 
