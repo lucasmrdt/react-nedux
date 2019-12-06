@@ -43,4 +43,4 @@ The `useStore` hook created by `createStoreHook` can be used as same as [useStat
 
 ## 🙋🏼 Contributions
 
-All [Pull Requests](https://github.com/lucasmrdt/nedux/compare?expand=1), [Issues](https://github.com/lucasmrdt/nedux/issues) and [Discussions](https://github.com/lucasmrdt/nedux/issues) are welcomed !
+All [Pull Requests](https://github.com/lucasmrdt/react-nedux/compare?expand=1), [Issues](https://github.com/lucasmrdt/react-nedux/issues) and [Discussions](https://github.com/lucasmrdt/react-nedux/issues) are welcomed !
