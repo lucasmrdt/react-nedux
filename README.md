@@ -7,7 +7,7 @@
 ## 📦 Installation
 
 ```bash
-npm install nedux react-nedux --save
+npm install react-nedux --save
 ```
 
 ## 💻 Usage with examples

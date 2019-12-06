@@ -28,10 +28,12 @@
   },
   "keywords": [
     "nedux",
-    "state",
-    "management",
-    "functionnal",
-    "store"
+    "react-nedux",
+    "react-state-management",
+    "state-management",
+    "react-store",
+    "typescript",
+    "nedux-provider"
   ],
   "author": "lucasmrdt",
   "license": "ISC",
