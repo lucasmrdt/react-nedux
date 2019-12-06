@@ -1,6 +1,6 @@
 # React-Nedux - The `n`ext react-r`edux`
 
-![typescript](https://img.shields.io/badge/-typescript-blueviolet) [![version](https://img.shields.io/badge/version-beta-blue)](https://www.npmjs.com/package/nedux) [![size](https://img.shields.io/bundlephobia/minzip/react-nedux?color=green&label=size)](https://www.npmjs.com/package/nedux)
+![typescript](https://img.shields.io/badge/-typescript-blueviolet) [![version](https://img.shields.io/badge/version-beta-blue)](https://www.npmjs.com/package/react-nedux) [![size](https://img.shields.io/bundlephobia/minzip/react-nedux?color=green&label=size)](https://www.npmjs.com/package/react-nedux)
 
 > The official React bindings for [nedux](https://github.com/lucasmrdt/nedux). Performant and flexible.
 
