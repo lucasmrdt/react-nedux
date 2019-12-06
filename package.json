@@ -1,6 +1,6 @@
 {
   "name": "react-nedux",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "the next redux state management",
   "main": "lib/react-nedux.js",
   "unpkg": "dist/react-nedux.js",
