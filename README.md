@@ -41,6 +41,45 @@ Creates a Nedux hook with the same usage of [useState](https://reactjs.org/docs/
 
 The `useStore` hook created by `createStoreHook` can be used as same as [useState](https://reactjs.org/docs/hooks-reference.html#usestate).
 
+## 🎛 Basic Usage
+
+> Feel free to test it [here](https://codesandbox.io/s/condescending-butterfly-u9lnf?fontsize=14&hidenavigation=1&theme=dark).
+
+```tsx
+import * as React from 'react';
+import { render } from 'react-dom';
+import { createStore } from 'nedux';
+import { createStoreHook } from 'react-nedux';
+
+type Store = {
+  counter: number;
+};
+
+const store = createStore<Store>({
+  counter: 0,
+});
+
+const useStore = createStoreHook<Store>(store);
+
+const increment = () => store.set('counter', prev => prev + 1);
+const decrement = () => store.set('counter', prev => prev - 1);
+
+const App = () => {
+  const [counter] = useStore('counter');
+
+  return (
+    <span>
+      <p>you've clicked {counter} times</p>
+      <button onClick={increment}>+</button>
+      <button onClick={decrement}>-</button>
+    </span>
+  );
+};
+
+const rootElement = document.getElementById('root');
+render(<App />, rootElement);
+```
+
 ## 🙋🏼 Contributions
 
 All [Pull Requests](https://github.com/lucasmrdt/react-nedux/compare?expand=1), [Issues](https://github.com/lucasmrdt/react-nedux/issues) and [Discussions](https://github.com/lucasmrdt/react-nedux/issues) are welcomed !
