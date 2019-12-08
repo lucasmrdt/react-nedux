@@ -51,15 +51,11 @@ import { render } from 'react-dom';
 import { createStore } from 'nedux';
 import { createStoreHook } from 'react-nedux';
 
-type Store = {
-  counter: number;
-};
-
-const store = createStore<Store>({
+const store = createStore({
   counter: 0,
 });
 
-const useStore = createStoreHook<Store>(store);
+const useStore = createStoreHook(store);
 
 const increment = () => store.set('counter', prev => prev + 1);
 const decrement = () => store.set('counter', prev => prev - 1);
