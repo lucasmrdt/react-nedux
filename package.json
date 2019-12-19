@@ -56,5 +56,8 @@
     "serialize-javascript": ">=2.1.1",
     "@types/react": "^16.9.15",
     "typescript": "^3.7.3"
+  },
+  "dependencies": {
+    "nedux": "^1.0.21"
   }
 }

@@ -21,7 +21,9 @@ export const createStoreHook = <
   );
 
   useEffect(() => {
-    const subscription = store.subscribe(key, { next: setValue });
+    const subscription = store.subscribe(key, setValue, {
+      withInitialValue: true,
+    });
     return () => (subscription as Subscription).unsubscribe();
   }, []);
 
