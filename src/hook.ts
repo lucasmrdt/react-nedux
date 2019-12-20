@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
 
 import { Store } from 'nedux';
 import { Subscription } from 'rxjs';
@@ -13,6 +13,7 @@ export const createStoreHook = <
 >(
   store: Store<T, K>,
 ) => <U extends K>(key: U): [T[U], Setter<T[U]>] => {
+  const subscription = useRef<Subscription | null>(null);
   const [value, setValue] = useState(store.get(key));
 
   const setter = useCallback<Setter<T[U]>>(
@@ -21,11 +22,12 @@ export const createStoreHook = <
   );
 
   useEffect(() => {
-    const subscription = store.subscribe(key, setValue, {
+    subscription.current = store.subscribe(key, setValue, {
       withInitialValue: true,
-    });
-    return () => (subscription as Subscription).unsubscribe();
+    }) as Subscription;
   }, []);
+
+  useEffect(() => () => subscription.current?.unsubscribe());
 
   return [value, setter];
 };
