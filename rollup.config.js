@@ -45,7 +45,6 @@ export default [
       }),
       babel({
         extensions,
-        plugins: ['@babel/plugin-proposal-optional-chaining'],
         runtimeHelpers: true
       })
     ]
@@ -72,7 +71,6 @@ export default [
       }),
       babel({
         extensions,
-        plugins: ['@babel/plugin-proposal-optional-chaining'],
         runtimeHelpers: true
       })
     ]
@@ -98,7 +96,6 @@ export default [
       }),
       babel({
         extensions,
-        plugins: ['@babel/plugin-proposal-optional-chaining'],
         exclude: 'node_modules/**'
       }),
       terser({
@@ -130,7 +127,6 @@ export default [
       }),
       babel({
         extensions,
-        plugins: ['@babel/plugin-proposal-optional-chaining'],
         exclude: 'node_modules/**'
       }),
       replace({
@@ -157,7 +153,6 @@ export default [
       }),
       babel({
         extensions,
-        plugins: ['@babel/plugin-proposal-optional-chaining'],
         exclude: 'node_modules/**'
       }),
       replace({
